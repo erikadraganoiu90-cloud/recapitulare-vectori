@@ -15,12 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="recapitulare-vectori.cpp">
+    <ClCompile Include="Source.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="recapitulare-vectori.h">
+    <ClInclude Include="minime-maximee.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="minime-maxime.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

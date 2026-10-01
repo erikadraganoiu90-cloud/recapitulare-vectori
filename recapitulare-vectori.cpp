@@ -54,12 +54,12 @@ int main()
 
 	//bool s1 = forma2k(24);
 	//cout << s1;
-	int v[100];
-	int m;
-	cin >> m;
-	for (int i = 0;i < m;i++) {
-		cin >> v[i];
-	}
+	//int v[100];
+	//int m;
+	//cin >> m;
+	//for (int i = 0;i < m;i++) {
+	//	cin >> v[i];
+	//}
 
 	//  descomp(27);
 	// sol16(m,v);
@@ -74,5 +74,5 @@ int main()
 	//int s1 = cmmmc(24, 60);
 	//int s1 = cmmmc2(24, 60);
      // cout << s1;
-	sol19(m,v);
+	//sol19(m,v);
 }
