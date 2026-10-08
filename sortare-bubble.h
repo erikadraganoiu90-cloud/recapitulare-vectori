@@ -2,6 +2,33 @@
 #include <iostream>
 using namespace std;
 
+//3.3
+bool nrPar(int n) {
+    if (n % 2 == 0) {
+        return true;
+    }
+    return false;
+ }
+void sortarePare(int v[], int dim) {
+    for (int i = 0;i < dim - 1;i++) {
+        if (nrPar(v[i]) == 1) {
+            for (int j = i + 1;j < dim;j++) {
+                if (nrPar(v[j]) == 1&&v[j]<v[i]) {
+                    swap(v[i], v[j]);
+                }
+            }
+        }
+    }
+}
+void sol35() {
+    int v[100] = { 5,8,3,2,9,6 };
+    int dim = 6;
+    sortarePare(v, dim);
+    for (int i = 0;i < dim;i++) {
+        cout << v[i] << " ";
+    }
+}
+
 //3.4
 bool sortat(int v[], int dim) {
 	for (int i = 0;i < dim-1;i++) {

@@ -20,10 +20,55 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="minime-maximee.h">
+    <ClInclude Include="parcurgerea-vectoriilor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="minime-maxime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="algoritmi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cautare-binara.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sortare-bubble.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sortare-selectie.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sortare-interval.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="munte-vale.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="interclasare.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stergere.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inserare.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="secventa-egale.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pozitie-secventa.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="secventa-suma.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="suma-maxima.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="frecventa-valori.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="frecventa-cifre.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

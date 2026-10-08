@@ -59,6 +59,21 @@ int cautareBinara(int v[], int d, int key)
  }
 
 
+ //2.3
+ int pozitieInserare(int v[], int dim, int val) {
+     for (int i = 0;i < dim;i++) {
+         if (v[i] > val) {
+             return i;
+         }
+     }
+     return dim;
+ }
+ void sol34() {
+     int v[100] = { 2,5,9,14 };
+     int dim = 4;
+     cout << pozitieInserare(v, dim, 7);
+ }
+
   //2.4
  int ceaMaiMicaValMaiMareCaX(int v[], int dim, int x) {
      int inf = 0;

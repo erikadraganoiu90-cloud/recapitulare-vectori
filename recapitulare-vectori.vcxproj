@@ -142,8 +142,23 @@
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="minime-maximee.h" />
+    <ClInclude Include="algoritmi.h" />
+    <ClInclude Include="cautare-binara.h" />
+    <ClInclude Include="frecventa-cifre.h" />
+    <ClInclude Include="frecventa-valori.h" />
+    <ClInclude Include="inserare.h" />
+    <ClInclude Include="interclasare.h" />
+    <ClInclude Include="munte-vale.h" />
+    <ClInclude Include="parcurgerea-vectoriilor.h" />
     <ClInclude Include="minime-maxime.h" />
+    <ClInclude Include="pozitie-secventa.h" />
+    <ClInclude Include="secventa-egale.h" />
+    <ClInclude Include="secventa-suma.h" />
+    <ClInclude Include="sortare-bubble.h" />
+    <ClInclude Include="sortare-interval.h" />
+    <ClInclude Include="sortare-selectie.h" />
+    <ClInclude Include="stergere.h" />
+    <ClInclude Include="suma-maxima.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

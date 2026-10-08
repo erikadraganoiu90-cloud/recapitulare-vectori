@@ -11,8 +11,8 @@ int minVector(int v[], int dim) {
 			min = v[i];
 		}
 	}
-	  
-	return min   ;
+
+	return min;
 }
 
 int ctMin(int v[], int dim) {
@@ -101,6 +101,43 @@ void solutie2() {
 	ctAparitieCifMaximaVector(v, d);
 }
 
+
+//1.3
+// functie schimbare pozitie
+int pozMin(int v[], int dim) {
+	int pozMinima;
+	int minim = minVector(v, dim);
+	for (int i = 0;i < dim;i++) {
+		if (v[i] == minim) {
+			 pozMinima = i;
+		}
+	}
+	return pozMinima;
+}
+int pozMax(int v[], int dim) {
+	int pozMaxima;
+	int maxim = maxVector(v, dim);
+	for (int i = 0;i < dim;i++) {
+		if (v[i] == maxim) {
+			 pozMaxima = i;
+		}
+	}
+	return pozMaxima;
+}
+void pozMinMax(int v[], int dim) {
+	int pozMaxima = pozMax(v, dim);
+	int pozMinima = pozMin(v, dim);
+	swap(v[pozMinima], v[pozMaxima]);
+}
+ 
+void sol33() {
+	int v[100] = { 1,5,3,76,4,23 };
+	int dim = 6;
+	pozMinMax(v, dim);
+	for (int i = 0;i<dim;i++) {
+		cout << v[i] << " ";
+	}
+}
 
 //1.4
 int aDouaCeaMaiMareVal(int v[], int dim) {
