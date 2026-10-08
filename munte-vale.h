@@ -54,3 +54,54 @@ void sol14() {
 
 //6.5
 
+//Scrie o functie care intoarce lungimea celei mai lungi portiuni de elemente vecine care formeaza un munte
+  //todo functie este varf
+bool esteVarf(int v[], int dim,int i) {
+    
+    if (i == 0 || i == dim - 1) {
+        return false;
+    }
+
+    return v[i - 1]<v[i] && v[i]>v[i + 1];
+}
+
+//cati pasi pot merge la stanga 
+
+int pasiLaStanga(int v[],  int i) {
+    int pasi = 0;
+    while (i - 1 >= 0 && v[i - 1] < v[i]) {
+        pasi++;
+        i--;
+    }
+    return pasi;
+}
+
+
+//cati pasi pot merge la dreapta
+int pasiLaDreapta(int v[],int dim, int i) {
+    int pasi = 0;
+    while (i + 1 < dim && v[i] > v[i + 1]) {
+        pasi++;
+        i++;
+    }
+    return pasi;
+}
+
+int lungimeMaximaMunte(int v[], int dim) {
+    int lungimeMaxima = 0;
+    for (int i = 0;i < dim;i++) {
+        if (esteVarf(v, dim, i) == 1) {
+            int lungimeCurenta = pasiLaStanga(v, i) + pasiLaDreapta(v, dim, i) + 1;
+            if (lungimeCurenta > lungimeMaxima) {
+                lungimeMaxima = lungimeCurenta;
+            }
+        }
+    }
+    return lungimeMaxima;
+ }
+
+void solVf() {
+    int v[100] = {  2,1,4,7,3,2,5 };
+    int dim = 7;
+    cout << lungimeMaximaMunte(v, dim);
+}

@@ -63,5 +63,11 @@ int main() {
 	//sol29();
 	//sol30();
 	//sol31();
-	sol32();
+	//sol32();
+	//int v[100] = { 1,2,3,4,3,2,1 };
+	//int dim = 7;
+	//cout << esteVarf(v, dim, 3) << " ";
+	//cout << pasiLaStanga(v, 3) << " ";
+	//cout << pasiLaDreapta(v, 7, 3);
+	solVf();
 }
