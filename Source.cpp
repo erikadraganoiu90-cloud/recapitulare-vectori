@@ -72,5 +72,9 @@ int main() {
 	//solVf();
 	//sol33();
 	//sol34();
-	sol35();
+	//sol35();
+	//sol36();
+	//sol37();
+	//sol38();
+	sol39();
 }

@@ -2,6 +2,36 @@
 #include <iostream>
 using namespace std;
 
+//4.3
+int nrCif(int n) {
+    if (n == 0) {
+        return 1;
+    }
+    int nr = 0;
+    while (n > 0) {
+        nr++;
+        n = n / 10;
+    }
+    return nr;
+}
+void sortareDupaLungime(int v[], int dim) {
+    for (int i = 0;i < dim - 1;i++) {
+        for (int j = i + 1;j < dim;j++) {
+            if (nrCif(v[i]) < nrCif(v[j])) {
+                swap(v[i], v[j]);
+            }
+        }
+    }
+}
+void sol36() {
+    int v[100] = { 1,343,23,4543 };
+    int dim = 4;
+    sortareDupaLungime(v, dim);
+    for (int i = 0;i < dim;i++) {
+        cout << v[i] << " ";
+    }
+}
+
 //4.4
 void valDistincte(int v[], int dim) {
 	int ct[10000] = { 0 };

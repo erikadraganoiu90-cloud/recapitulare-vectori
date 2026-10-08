@@ -1,6 +1,30 @@
 #pragma once
 #include <iostream>
 using namespace std;
+//6.3
+bool esteVarf(int v[], int dim,int i) {
+    
+    if (i == 0 || i == dim - 1) {
+        return false;
+    }
+
+    return v[i - 1]<v[i] && v[i]>v[i + 1];
+}
+
+int pozVf(int v[], int dim) {
+    for (int i = 0;i < dim;i++) {
+        if (esteVarf(v, dim, i) == 1) {
+            return i;
+         }
+    }
+    
+}
+void sol38() {
+    int v[100] = { 1, 2, 3, 4, 2, 1 };
+    int dim = 6;
+    cout << pozVf(v, dim);
+}
+
 //6.4
 void sortareInterval(int v[], int start, int finish)
 {
@@ -56,14 +80,6 @@ void sol14() {
 
 //Scrie o functie care intoarce lungimea celei mai lungi portiuni de elemente vecine care formeaza un munte
   //todo functie este varf
-bool esteVarf(int v[], int dim,int i) {
-    
-    if (i == 0 || i == dim - 1) {
-        return false;
-    }
-
-    return v[i - 1]<v[i] && v[i]>v[i + 1];
-}
 
 //cati pasi pot merge la stanga 
 

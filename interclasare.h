@@ -2,6 +2,41 @@
 #include <iostream>
 using namespace std;
 
+//7.3
+void valComune(int a[], int da, int b[], int db, int c[], int& dc) {
+    int i = 0, j = 0;
+    dc = 0;
+    while (i < da && j < db) {
+        if (a[i] < b[j]) {
+            i++;
+        }
+        else {
+            if (a[i] > b[j]) {
+                j++;
+            }
+            else {
+                if (c[dc] = a[i]) {
+                    i++;
+                    j++;
+                    dc++;
+                }
+            }
+        }
+    }
+}
+void sol39() {
+    int a[100] = { 1,4,7,9 };
+    int da = 4;
+    int b[100] = { 2,4,9 };
+    int db = 3;
+    int c[100];
+    int dc = 0;
+    valComune(a, da, b, db, c, dc);
+    for (int i = 0;i < dc;i++) {
+        cout << c[i] << " ";
+    }
+}
+
 //7.4
 void interclasare(int a[], int da, int b[], int db, int c[], int& dc)
 {
