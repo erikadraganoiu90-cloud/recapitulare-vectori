@@ -38,7 +38,7 @@ void sol39() {
 }
 
 //7.4
-void interclasare(int a[], int da, int b[], int db, int c[], int& dc)
+void reuniune(int a[], int da, int b[], int db, int c[], int& dc)
 {
     int i = 0;
     int j = 0;
@@ -102,7 +102,57 @@ void sol15() {
     }
 }
 
+
 //7.5
+
+void interclasare(int a[], int da, int b[], int db, int c[], int& dc)
+{
+    int i = 0;
+    int j = 0;
+    dc = 0;
+
+    while (i < da && j < db)
+    {
+        if (a[i] <= b[j])
+        {
+            c[dc++] = a[i++];
+
+        }
+        else {
+            if (b[j] <= a[i]) {
+                c[dc++] = b[j++];
+            }
+            else {
+                c[dc++] = a[i];
+                i++;
+                j++;
+            }
+        }
+ 
+
+    }
+
+    while (i < da)
+    {
+        if (dc == 0 || c[dc - 1] != a[i]) {
+            c[dc++] = a[i];
+        }
+        i++;
+
+
+    }
+
+    while (j < db)
+    {
+        if (dc == 0 || c[dc - 1] != b[j]) {
+            c[dc++] = b[j];
+        }
+
+        j++;
+
+    }
+
+}
 void sol16() {
     int a[100] = { 1, 3, 5, 6, 7 };
     int b[100] = { 1, 2, 5, 8, 9 };

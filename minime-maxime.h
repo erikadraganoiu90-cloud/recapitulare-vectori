@@ -141,16 +141,18 @@ void sol33() {
 
 //1.4
 int aDouaCeaMaiMareVal(int v[], int dim) {
-	int max1 = v[0];
-	int max2 = v[0];
+	int max;
+	max=maxVector(v , dim);
+	int ok = -1;
 	for (int i = 1;i < dim;i++) {
-		if (v[i] >= max1) {
-			max2 = max1;
-			max1 = v[i];
+		if (v[i] <max&&ok==-1) {
+			 
+			ok = v[i];
 
 		}
 	}
-	return max2;
+	return ok;
+	 
 } 
 void sol4() {
 	int v[101] = { 2 ,23 ,34 ,56, 49, 57, 67 };

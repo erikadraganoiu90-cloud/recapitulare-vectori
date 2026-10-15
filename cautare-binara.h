@@ -75,7 +75,19 @@ int cautareBinara(int v[], int d, int key)
  }
 
   //2.4
+ void sortare(int v[], int dim) {
+     for (int i = 0;i < dim - 1;i++) {
+          
+             for (int j = i + 1;j < dim;j++) {
+                 if (  v[j] < v[i]) {
+                     swap(v[i], v[j]);
+                 }
+             }
+          
+     }
+ }
  int ceaMaiMicaValMaiMareCaX(int v[], int dim, int x) {
+     sortare(v, dim);
      int inf = 0;
      int sup = dim - 1;
      int rez = -1;
@@ -83,7 +95,7 @@ int cautareBinara(int v[], int d, int key)
      while (inf <= sup)
      {
          int mij = (inf + sup) / 2;
-         if (v[mij] > x)
+         if (v[mij] >= x)
          {
              rez = v[mij];
              sup = mij - 1;

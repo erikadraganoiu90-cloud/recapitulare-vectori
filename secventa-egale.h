@@ -35,20 +35,20 @@ void sol21() {
 
 void ceaMaiLungaSecventaEgaleParitate(int v[], int d) 
 {
-    int start = -1;
+    
     int lungime = 0;
 
     for (int i = 0; i < d; i++)
     {
         int j = i;
-        while (j + 1 < d && v[j + 1] > v[j] && v[j + 1] % 2 == v[j] % 2)
+        while (j + 1 < d  && v[j + 1] % 2 == v[j] % 2)
         {
             j++;
         }
 
         if (j - i + 1 > lungime)
         {
-            start = i;
+            
             lungime = j - i + 1;
         }
 

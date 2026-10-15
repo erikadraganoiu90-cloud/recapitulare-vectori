@@ -26,19 +26,14 @@ int majoritar(int v[], int d) {
         ct[v[i]]++;
     }
     int max = -1000;
-    int nr=0;
+    int nr=-1;
     for (int i = 0;i < d;i++) {
         if (ct[v[i]] > d / 2 && ct[v[i]] > max) {
             max = ct[v[i]];
              nr = v[i];
         }
     }
-    if (nr == 0) {
-        return -1;
-    }
-    else {
-        return nr;
-    }
+    return nr;
     
 }
 void sol30() {

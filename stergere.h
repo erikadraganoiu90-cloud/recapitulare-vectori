@@ -3,13 +3,13 @@
 using namespace std;
 //8.4
 int mediAritmetica(int v[], int dim) {
-	int s = 0;
+	double s = 0;
 	int ct = 0;
 	for (int i = 0;i < dim;i++) {
 		s = s + v[i];
 		ct++;
 	}
-	int media = s / ct;
+	  double media = s / ct;
 	return media;
 }
 void stergereElement(int v[], int& dim)
@@ -57,7 +57,7 @@ void stergereNr(int v[], int dim) {
 	int a[1000];
 	int k = 0;
 	for (int i = 0;i < dim;i++) {
-		if (ctAparitie(v, dim,v[i]) == 1) {
+		if (ctAparitie(v, dim,v[i])%2 == 1) {
 			a[k++] = v[i  ];
 
 		}

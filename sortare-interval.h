@@ -59,12 +59,12 @@ void sortareInterval(int v[],int dim, int start, int finish) {
 void sol12( ) {
 int v[] = { 9, 7, 5, 3, 1, 2 };
     int dim = 6;
-
+sortareInterval(v, dim, 1, 4);
     for (int i = 0; i < dim; i++) {
         cout << v[i] << " ";
     }
     
-    sortareInterval(v, dim, 1, 4);
+    
 }
 
 //5.5
